@@ -7,25 +7,25 @@ function Categories() {
         designed for every room in your home.
       </p>
 
-      <div className="grid grid-cols-3 gap-8">
-        <div className="space-y-4">
-          <div className="w-full h-40 bg-gray-200 flex items-center justify-center rounded-md">
+      <div className="grid grid-cols-3 gap-4">
+        <div className="space-y-4 text-left">
+          <div className="w-90 h-60 bg-gray-200 flex items-center justify-center rounded-md">
             Living Room Furniture
           </div>
           <h4 className="font-semibold">Living Room</h4>
           <p className="text-gray-500 text-sm">Sofas, coffee tables, and entertainment units</p>
         </div>
 
-        <div className="space-y-4">
-          <div className="w-full h-40 bg-gray-200 flex items-center justify-center rounded-md">
+        <div className="space-y-4 text-left">
+          <div className="w-90 h-60 bg-gray-200 flex items-center justify-center rounded-md">
             Dining Room Furniture
           </div>
           <h4 className="font-semibold">Dining Room</h4>
           <p className="text-gray-500 text-sm">Dining tables, chairs, and storage solutions</p>
         </div>
 
-        <div className="space-y-4">
-          <div className="w-full h-40 bg-gray-200 flex items-center justify-center rounded-md">
+        <div className="space-y-4 text-left">
+          <div className="w-90 h-60 bg-gray-200 flex items-center justify-center rounded-md">
             Bedroom Furniture
           </div>
           <h4 className="font-semibold">Bedroom</h4>
