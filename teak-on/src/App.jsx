@@ -2,6 +2,7 @@ import './App.css';
 import Categories from './components/Categories';
 import Header from './components/Header';
 import Footer from './components/Footer';
+import FeaturedProducts from './components/FeaturedProducts';
 
 function App() {
   return (
@@ -29,6 +30,7 @@ function App() {
         </div>
       </section>
       <Categories />
+      <FeaturedProducts />
       <Footer />
     </main>
   );
