@@ -1,6 +1,6 @@
 function Categories() {
   return (
-    <section className="text-center p-16 mt-32">
+    <section className=" bg-gray-100 text-center p-16 ">
       <h3 className="text-2xl font-semibold mb-2">Shop by Category</h3>
       <p className="text-gray-500 mb-10">
         Explore our carefully curated collection of premium teakwood furniture

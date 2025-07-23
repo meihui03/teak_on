@@ -1,12 +1,14 @@
 import './App.css';
+import Categories from './components/Categories';
 import Header from './components/Header';
+import Footer from './components/Footer';
 
 function App() {
   return (
-    <main className="font-sans">
+    <main className="font-sans w-full">
       <Header />
       <section className="grid grid-cols-2 gap-12 p-16">
-        <div className="space-y-6">
+        <div className=" space-y-6">
           <h2 className="text-4xl font-semibold">
             Premium Teakwood <br /> Furniture for Modern Living
           </h2>
@@ -21,45 +23,13 @@ function App() {
         </div>
 
         <div className="flex items-center justify-center">
-          <div className="w-full h-64 bg-gray-200 flex items-center justify-center rounded-lg">
+          <div className="w-150 h-90 bg-gray-200 flex items-center justify-center rounded-lg">
             Hero Furniture Image
           </div>
         </div>
       </section>
-
-      <section className="text-center p-16">
-        <h3 className="text-2xl font-semibold mb-2">Shop by Category</h3>
-        <p className="text-gray-500 mb-10">
-          Explore our carefully curated collection of premium teakwood furniture
-          designed for every room in your home.
-        </p>
-
-        <div className="grid grid-cols-3 gap-8">
-          <div className="space-y-4">
-            <div className="w-full h-40 bg-gray-200 flex items-center justify-center rounded-md">
-              Living Room Furniture
-            </div>
-            <h4 className="font-semibold">Living Room</h4>
-            <p className="text-gray-500 text-sm">Sofas, coffee tables, and entertainment units</p>
-          </div>
-
-          <div className="space-y-4">
-            <div className="w-full h-40 bg-gray-200 flex items-center justify-center rounded-md">
-              Dining Room Furniture
-            </div>
-            <h4 className="font-semibold">Dining Room</h4>
-            <p className="text-gray-500 text-sm">Dining tables, chairs, and storage solutions</p>
-          </div>
-
-          <div className="space-y-4">
-            <div className="w-full h-40 bg-gray-200 flex items-center justify-center rounded-md">
-              Bedroom Furniture
-            </div>
-            <h4 className="font-semibold">Bedroom</h4>
-            <p className="text-gray-500 text-sm">Beds, wardrobes, and bedside tables</p>
-          </div>
-        </div>
-      </section>
+      <Categories />
+      <Footer />
     </main>
   );
 }
