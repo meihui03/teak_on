@@ -1,6 +1,10 @@
+import cart from "../assets/cart.svg";
+import search from "../assets/search.svg";
+
 function Header() {
+
   return (
-    <nav className="flex justify-between items-center py-3 px-6 border-b">
+    <nav className="flex justify-between items-center py-3 px-6 ">
       <h1 className="font-bold text-lg">Teak On</h1>
       <ul className="flex gap-6 text-grey-700">
         <li>Home</li>
@@ -10,8 +14,8 @@ function Header() {
         <li>Contact</li>
       </ul> 
       <div className="flex gap-4">
-        {/* <span>🔍</span> */}
-        {/* <span>🛒</span> */}
+        <img src={search} alt="Search" />
+        <img src={cart} alt="Cart" />
       </div>
     </nav>
   );

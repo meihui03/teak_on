@@ -1,9 +1,7 @@
-@import "tailwindcss/base";
-@import "tailwindcss/components";
-@import "tailwindcss/utilities";
+@import 'tailwindcss';
 
-@layer utilities {
+/* @layer utilities {
   .text-gradient {
     @apply bg-gradient-to-r from-blue-500 to-purple-500 bg-clip-text text-transparent;
   }
-}
+} */
