@@ -7,7 +7,7 @@ function Header() {
   const [showCollections, setShowCollections] = useState(false);
 
   return (
-    <nav className="relative bg-white shadow-md z-50 h-20">
+    <nav className="relative bg-white shadow-md z-50 h-16">
       <div className="max-w-screen-xl mx-auto flex justify-between items-center h-full px-6">
         <Link to="/" className="flex items-center h-full">
           <h1 className="text-xl font-bold">Teak On</h1>
@@ -48,7 +48,9 @@ function Header() {
 
         <div className="flex items-center gap-4 h-full">
           <img src={search} alt="Search" className="w-5 h-5 cursor-pointer" />
-          <img src={cart} alt="Cart" className="w-5 h-5 cursor-pointer" />
+          <Link to="/cart">
+  <img src={cart} alt="Cart" className="w-5 h-5 cursor-pointer" />
+</Link>
         </div>
       </div>
     </nav>
