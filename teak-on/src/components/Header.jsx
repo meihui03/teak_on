@@ -15,7 +15,9 @@ function Header() {
 
         <ul className="flex gap-8 text-gray-700 h-full items-center">
           <li className="flex items-center h-full hover:border-b-2 border-black transition">
-            <span className="cursor-pointer">Furniture</span>
+            <Link to="/furniture" className="flex items-center h-full">
+              <span>Furniture</span>
+            </Link>
           </li>
 
           <li
@@ -49,8 +51,8 @@ function Header() {
         <div className="flex items-center gap-4 h-full">
           <img src={search} alt="Search" className="w-5 h-5 cursor-pointer" />
           <Link to="/cart">
-  <img src={cart} alt="Cart" className="w-5 h-5 cursor-pointer" />
-</Link>
+            <img src={cart} alt="Cart" className="w-5 h-5 cursor-pointer" />
+          </Link>
         </div>
       </div>
     </nav>

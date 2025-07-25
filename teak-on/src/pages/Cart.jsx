@@ -76,7 +76,7 @@ function Cart() {
           <div className="text-right mt-6">
             <h3 className="text-lg font-semibold">Total: ${totalPrice.toFixed(2)}</h3>
             <button className="mt-4 px-6 py-2 bg-black text-white rounded hover:bg-gray-800 transition">
-              Proceed to Checkout
+              Proceed to Order
             </button>
           </div>
         </div>
