@@ -14,7 +14,7 @@ const allProducts = [
   { id: 10, name: "Cabinet", price: 680, category: "Office" },
 ];
 
-const categories = ["Living Room", "Bedroom", "Outdoor", "Office"];
+const categories = ["All", "Living Room", "Bedroom", "Outdoor", "Office"];
 const priceRanges = [
   { label: "All", min: 0, max: Infinity },
   { label: "Under $500", min: 0, max: 500 },
@@ -25,22 +25,32 @@ const priceRanges = [
 const ITEMS_PER_PAGE = 6;
 
 function Furniture() {
-  const [selectedCategories, setSelectedCategories] = useState([]);
+  const [selectedCategories, setSelectedCategories] = useState(["All"]);
   const [selectedPriceRange, setSelectedPriceRange] = useState("All");
   const [page, setPage] = useState(1);
 
   const toggleCategory = (category) => {
     setPage(1);
-    setSelectedCategories((prev) =>
-      prev.includes(category)
-        ? prev.filter((c) => c !== category)
-        : [...prev, category]
-    );
+
+    if (category === "All") {
+      setSelectedCategories(["All"]);
+    } else {
+      let updated = selectedCategories.includes(category)
+        ? selectedCategories.filter((c) => c !== category)
+        : [...selectedCategories.filter((c) => c !== "All"), category];
+
+      // If none selected, fallback to "All"
+      if (updated.length === 0) {
+        updated = ["All"];
+      }
+
+      setSelectedCategories(updated);
+    }
   };
 
   const filteredProducts = allProducts.filter((product) => {
     const categoryMatch =
-      selectedCategories.length === 0 || selectedCategories.includes(product.category);
+      selectedCategories.includes("All") || selectedCategories.includes(product.category);
 
     const { min, max } =
       priceRanges.find((range) => range.label === selectedPriceRange) || {};
