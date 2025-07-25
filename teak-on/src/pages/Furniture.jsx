@@ -39,7 +39,6 @@ function Furniture() {
         ? selectedCategories.filter((c) => c !== category)
         : [...selectedCategories.filter((c) => c !== "All"), category];
 
-      // If none selected, fallback to "All"
       if (updated.length === 0) {
         updated = ["All"];
       }
@@ -82,6 +81,8 @@ function Furniture() {
                   id={cat}
                   checked={selectedCategories.includes(cat)}
                   onChange={() => toggleCategory(cat)}
+
+                  className="accent-black"
                 />
                 <label htmlFor={cat} className="cursor-pointer text-gray-700">
                   {cat}
