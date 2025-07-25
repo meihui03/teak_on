@@ -35,7 +35,7 @@ function Contact() {
   return (
     <div className="p-8 max-w-3xl mx-auto">
       <h1 className="text-3xl font-semibold mb-4">Contact Us</h1>
-      <p className="text-gray-700 mb-6">
+      <p className="text-gray-600 mb-6">
         We'd love to hear from you! Fill out the form below or reach out to us directly.
       </p>
       <form ref={form} onSubmit={sendEmail} className="space-y-4">

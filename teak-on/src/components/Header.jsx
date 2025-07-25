@@ -15,9 +15,7 @@ function Header() {
 
         <ul className="flex gap-8 text-gray-700 h-full items-center">
           <li className="flex items-center h-full hover:border-b-2 border-black transition">
-            <Link to="/furniture" className="flex items-center h-full">
-              <span>Furniture</span>
-            </Link>
+            <Link to="/furniture">Furniture</Link>
           </li>
 
           <li
@@ -40,7 +38,7 @@ function Header() {
           </li>
 
           <li className="flex items-center h-full hover:border-b-2 border-black transition">
-            <span className="cursor-pointer">About</span>
+            <Link to="/about">About</Link>
           </li>
 
           <li className="flex items-center h-full hover:border-b-2 border-black transition">

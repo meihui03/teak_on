@@ -38,7 +38,7 @@ const FeaturedProducts = () => {
   return (
     <section className="px-6 py-16 w-full">
       <h3 className="text-3xl font-semibold text-center mb-4">Featured Products</h3>
-      <p className="text-center text-gray-600 mb-10">
+      <p className="text-center text-gray-500 mb-10">
         Handpicked teakwood pieces that combine luxury and functionality.
       </p>
 
